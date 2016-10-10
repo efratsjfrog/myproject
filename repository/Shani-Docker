@@ -1,0 +1,15 @@
+localRepository('docker-framework') {
+  description ''
+  notes ''
+  includesPattern '**/*'
+  excludesPattern ''
+  repoLayoutRef 'simple-default'
+  propertySets (['artifactory'])
+  archiveBrowsingEnabled false
+  blackedOut false
+
+  packageType 'docker'
+
+  dockerApiVersion 'V2'
+  forceDockerAuthentication 
+}

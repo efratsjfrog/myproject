@@ -1,0 +1,45 @@
+virtualRepository('vir1') {
+  description "Public description"
+  notes "Some internal notes"
+  includesPattern "**/*" // default
+  excludesPattern "" // default
+  repoLayoutRef "maven-2-default"
+  repositories (["local-rep1", "local-rep2"]) // values (["local-rep1", "local-rep2", ...]) are examples. Please set existing values from the instance 
+  artifactoryRequestsCanRetrieveRemoteArtifacts false
+  defaultDeploymentRepo ""
+  
+  packageType "generic" // "bower" | "docker" | "gems" | "generic" | "gitlfs" | "gradle" | "ivy" | "maven" | "npm" | "nuget" | "p2" | "pypi" | "sbt"
+  
+  // packageType "bower"
+  // externalDependenciesEnabled false
+  // externalDependenciesPatterns (["**"])
+  // externalDependenciesRemoteRepo ""
+  
+  // packageType "docker"
+  // forceDockerAuthentication false
+  
+  // packageType "gradle"
+  // pomRepositoryReferencesCleanupPolicy "discard_active_reference" // default | "discard_any_reference" | "nothing"
+  // keyPair "keypair1" //value "keypair1" is example. Please set existing value from the instance
+  
+  // packageType "ivy"
+  // pomRepositoryReferencesCleanupPolicy "discard_active_reference" // default | "discard_any_reference" | "nothing"
+  // keyPair "keypair1" //value "keypair1" is example. Please set existing value from the instance
+  
+  // packageType "maven"
+  // pomRepositoryReferencesCleanupPolicy "discard_active_reference" // default | "discard_any_reference" | "nothing"
+  // keyPair "keypair1" //value "keypair1" is example. Please set existing value from the instance
+  
+  // packageType "npm"
+  // externalDependenciesEnabled false
+  // externalDependenciesPatterns (["**"])
+  // externalDependenciesRemoteRepo ""
+  
+  // packageType "nuget"
+  // forceNugetAuthentication false
+  
+  // packageType "sbt"
+  // pomRepositoryReferencesCleanupPolicy "discard_active_reference" // default | "discard_any_reference" | "nothing"
+  // keyPair "keypair1" //value "keypair1" is example. Please set existing value from the instance
+  
+}

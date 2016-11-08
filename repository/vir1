@@ -4,7 +4,7 @@ virtualRepository('vir1') {
   includesPattern "**/*" // default
   excludesPattern "" // default
   repoLayoutRef "maven-2-default"
-  repositories (["local-rep1", "local-rep2"]) // values (["local-rep1", "local-rep2", ...]) are examples. Please set existing values from the instance 
+  repositories (["DR-Debian-local"]) // values (["local-rep1", "local-rep2", ...]) are examples. Please set existing values from the instance 
   artifactoryRequestsCanRetrieveRemoteArtifacts false
   defaultDeploymentRepo ""
   
